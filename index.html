@@ -1,244 +1,92 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#F5F2EA">
-<meta name="color-scheme" content="light">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ulvi Aliyev — Venture builder. Zero to validated.</title>
 <meta name="description" content="Venture builder at SABAH.studio. I take ideas from zero to first paying customers, then hand them to a founding team. Built Dapti and Admitt. Based in Baku, building across the CIS.">
-<link rel="canonical" href="https://ulvialiyev.com/">
-
-<meta property="og:type" content="website">
-<meta property="og:title" content="Ulvi Aliyev — Venture builder. Zero to validated.">
-<meta property="og:description" content="Venture builder at SABAH.studio. I take ideas from zero to first paying customers, then hand them to a founding team. Built Dapti and Admitt.">
-<meta property="og:image" content="static/img/Ulvi_photo.png">
-<meta property="og:url" content="https://ulvialiyev.com/">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Ulvi Aliyev — Venture builder. Zero to validated.">
-<meta name="twitter:description" content="Venture builder at SABAH.studio. Builds ideas from zero to first paying customers.">
-<meta name="twitter:image" content="static/img/Ulvi_photo.png">
-
-<link rel="icon" type="image/svg+xml" href="static/img/logos/logo 1.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XVWRJNGX3D"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-XVWRJNGX3D');
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Ulvi Aliyev",
-  "url": "https://ulvialiyev.com/",
-  "jobTitle": "Venture Builder",
-  "worksFor": { "@type": "Organization", "name": "SABAH.studio" },
-  "address": { "@type": "PostalAddress", "addressLocality": "Baku", "addressCountry": "AZ" },
-  "sameAs": [
-    "https://www.linkedin.com/in/ualiyev/",
-    "https://dapti.az",
-    "https://admitt.io"
-  ],
-  "email": "mailto:hi@ulvialiyev.com"
-}
-</script>
-
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#F5F2EA;
-    --bg-2:#EFEBE0;
-    --ink:#1A1610;
-    --ink-2:#2A2419;
-    --muted:#5C5749;
-    --faint:#9A9485;
-    --line:rgba(26,22,16,0.12);
-    --line-soft:rgba(26,22,16,0.06);
-    --ox:#A83A2E;
-    --ox-deep:#8A2E24;
-    --serif:"Instrument Serif",Georgia,"Times New Roman",serif;
-    --sans:"Hanken Grotesk",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-    --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+    --bg:#F5F2EA;--ink:#211D16;--muted:#615C50;--faint:#9A9485;
+    --line:rgba(33,29,22,0.12);--line-soft:rgba(33,29,22,0.07);--ox:#A83A2E;
+    --serif:"Instrument Serif",Georgia,serif;--sans:"Hanken Grotesk",-apple-system,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace;
     --maxw:680px;
-    --ease:cubic-bezier(.2,.7,.2,1);
   }
-  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-  body{
-    background:var(--bg);
-    color:var(--ink);
-    font-family:var(--sans);
-    font-weight:400;
-    line-height:1.6;
-    font-size:17px;
-    font-feature-settings:"kern" 1,"liga" 1,"calt" 1;
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
-    text-rendering:optimizeLegibility;
-    min-height:100dvh;
-    position:relative;
-    overflow-x:hidden;
-  }
-  /* film grain — very subtle, premium tactility */
-  body::before{
-    content:"";position:fixed;inset:0;pointer-events:none;z-index:1;
-    opacity:.035;mix-blend-mode:multiply;
-    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.6 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
-  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:400;line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
   ::selection{background:var(--ox);color:var(--bg)}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
   a{color:inherit;text-decoration:none}
-  :focus{outline:none}
-  :focus-visible{outline:2px solid var(--ox);outline-offset:3px;border-radius:2px}
+  .mono{font-family:var(--mono);font-size:12px;letter-spacing:0.04em;color:var(--faint)}
 
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;position:relative;z-index:2}
-  .mono{font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--faint);font-feature-settings:"tnum" 1}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:78px}
+  nav .name{font-family:var(--serif);font-size:21px}
+  nav .name .pt{color:var(--ox)}
+  nav .links{display:flex;gap:24px}
+  nav .links a{font-family:var(--mono);font-size:12.5px;color:var(--muted);transition:color .2s}
+  nav .links a:hover{color:var(--ink)}
+  @media(max-width:560px){nav .links{display:none}}
 
-  /* skip link */
-  .skip{position:absolute;left:-9999px;top:0;background:var(--ink);color:var(--bg);padding:10px 14px;font-family:var(--mono);font-size:12px;border-radius:3px;z-index:1000}
-  .skip:focus{left:12px;top:12px}
-
-  /* NAV */
-  nav{position:sticky;top:0;background:rgba(245,242,234,.82);backdrop-filter:saturate(140%) blur(10px);-webkit-backdrop-filter:saturate(140%) blur(10px);z-index:50;border-bottom:1px solid transparent;transition:border-color .3s var(--ease)}
-  nav.scrolled{border-bottom-color:var(--line-soft)}
-  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
-  .name{font-family:var(--serif);font-size:22px;letter-spacing:-.005em}
-  .name .pt{color:var(--ox)}
-  .links{display:flex;gap:26px}
-  .links a{font-family:var(--mono);font-size:12.5px;color:var(--muted);position:relative;padding:4px 0;transition:color .2s var(--ease)}
-  .links a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--ink);transform:scaleX(0);transform-origin:left;transition:transform .25s var(--ease)}
-  .links a:hover{color:var(--ink)}
-  .links a:hover::after{transform:scaleX(1)}
-  @media(max-width:560px){.links{display:none}}
-
-  /* HERO */
-  .hero{padding:72px 0 84px}
-  .kick{display:inline-flex;align-items:center;gap:10px;margin-bottom:24px}
-  .dot{width:7px;height:7px;border-radius:50%;background:var(--ox);box-shadow:0 0 0 0 rgba(168,58,46,.45);animation:pulse 2.6s var(--ease) infinite}
-  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(168,58,46,.45)}70%{box-shadow:0 0 0 8px rgba(168,58,46,0)}100%{box-shadow:0 0 0 0 rgba(168,58,46,0)}}
-  .hero h1{
-    font-family:var(--serif);font-weight:400;
-    font-size:clamp(2.8rem,8.4vw,4.8rem);
-    line-height:.98;letter-spacing:-.015em;
-    margin-bottom:28px;max-width:13ch;
-  }
+  .hero{padding:64px 0 76px}
+  .hero .kick{margin-bottom:22px}
+  .hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(2.8rem,8vw,4.6rem);line-height:1;letter-spacing:-0.01em;margin-bottom:26px;max-width:13ch}
   .hero h1 .it{font-style:italic;color:var(--ox)}
-  .hero .lede{font-size:18.5px;color:var(--muted);max-width:46ch;margin-bottom:32px}
+  .hero p{font-size:18px;color:var(--muted);max-width:46ch;margin-bottom:30px}
   .cta-row{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
-  .btn{
-    display:inline-flex;align-items:center;gap:9px;
-    background:var(--ink);color:var(--bg);
-    font-family:var(--mono);font-size:13px;font-weight:500;
-    padding:13px 22px;border-radius:3px;
-    transition:transform .15s var(--ease),background .2s var(--ease);
-  }
-  .btn:hover{background:var(--ink-2);transform:translateY(-1px)}
-  .btn .arr{transition:transform .2s var(--ease)}
-  .btn:hover .arr{transform:translateX(3px)}
-  .ghost{
-    font-family:var(--mono);font-size:13px;color:var(--muted);
-    border-bottom:1px solid var(--line);padding-bottom:3px;
-    transition:color .2s var(--ease),border-color .2s var(--ease);
-  }
+  .btn{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:var(--bg);font-family:var(--mono);font-size:13px;padding:12px 22px;border-radius:3px;transition:transform .15s,opacity .2s}
+  .btn:hover{transform:translateY(-1px);opacity:.9}
+  .btn .arr{transition:transform .2s}.btn:hover .arr{transform:translateX(3px)}
+  .ghost{font-family:var(--mono);font-size:13px;color:var(--muted);border-bottom:1px solid var(--line);padding-bottom:2px;transition:color .2s,border-color .2s}
   .ghost:hover{color:var(--ink);border-color:var(--ox)}
 
-  section{padding:32px 0}
-  .lbl{
-    font-family:var(--mono);font-size:11px;letter-spacing:.18em;
-    text-transform:uppercase;color:var(--faint);
-    margin-bottom:28px;display:flex;align-items:center;gap:12px;
-  }
-  .lbl::after{content:"";flex:1;height:1px;background:var(--line-soft)}
+  section{padding:30px 0}
+  .lbl{font-family:var(--mono);font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:var(--faint);margin-bottom:24px}
 
-  /* VENTURES */
-  .v{padding:30px 0;border-top:1px solid var(--line);transition:padding .3s var(--ease)}
-  .v-top{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:12px}
-  .v-name{font-family:var(--serif);font-size:30px;line-height:1;display:inline-flex;align-items:center;gap:10px;transition:color .25s var(--ease)}
-  .v-name .ext{font-family:var(--mono);font-size:11px;color:var(--faint);transform:translateY(-9px);transition:color .25s var(--ease),transform .25s var(--ease)}
-  .v-when{font-family:var(--mono);font-size:11px;color:var(--faint);white-space:nowrap;text-align:right;line-height:1.55;font-feature-settings:"tnum" 1}
-  .v-when b{font-weight:500;color:var(--muted)}
-  .v-desc{color:var(--muted);font-size:16px;margin-bottom:20px;max-width:60ch}
-  .nums{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;font-family:var(--mono);max-width:420px}
-  .nums .n{font-size:20px;font-weight:500;color:var(--ink);font-variant-numeric:tabular-nums;letter-spacing:-.01em}
-  .nums .c{font-size:11px;color:var(--faint);margin-top:4px;letter-spacing:.04em}
-  a.vl{display:block;color:inherit}
-  a.vl:hover .v-name{color:var(--ox)}
-  a.vl:hover .v-name .ext{color:var(--ox);transform:translateY(-9px) translateX(3px)}
-  .v.no-link .v-name .ext{display:none}
-  @media(max-width:560px){.nums{grid-template-columns:repeat(2,1fr);gap:20px}}
+  .v{padding:28px 0;border-top:1px solid var(--line)}
+  .v-top{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:10px}
+  .v-name{font-family:var(--serif);font-size:28px;display:inline-flex;align-items:center;gap:9px;transition:color .2s}
+  .v-name .ext{font-family:var(--mono);font-size:11px;color:var(--faint);transform:translateY(-6px);transition:color .2s,transform .2s}
+  a.vl:hover .v-name{color:var(--ox)}a.vl:hover .ext{color:var(--ox);transform:translateY(-6px) translateX(2px)}
+  .v-when{font-family:var(--mono);font-size:11px;color:var(--faint);white-space:nowrap;text-align:right;line-height:1.5}
+  .v-desc{color:var(--muted);font-size:16px;margin-bottom:18px;max-width:58ch}
+  .nums{display:flex;gap:38px;flex-wrap:wrap;font-family:var(--mono)}
+  .nums .n{font-size:19px;font-weight:400;font-variant-numeric:tabular-nums}
+  .nums .c{font-size:11px;color:var(--faint);margin-top:3px}
+  @media(max-width:560px){.nums{gap:24px}}
 
-  /* ABOUT */
-  .about{padding-top:54px}
-  .about .lead{font-family:var(--serif);font-size:26px;line-height:1.32;color:var(--ink);max-width:26ch;letter-spacing:-.005em;margin-bottom:28px}
+  .about{padding-top:46px}
   .about p{font-size:18px;margin-bottom:20px;max-width:56ch;color:var(--muted)}
   .about p:last-child{margin-bottom:0}
-  .about em{font-style:italic;color:var(--ink-2)}
-  .about .hl{color:var(--ink-2);font-weight:500}
+  .about .lead{font-family:var(--serif);font-size:24px;line-height:1.4;color:var(--ink);max-width:24ch;letter-spacing:-0.005em}
+  .about em{font-style:italic;color:var(--ink)}
+  .about .hl{color:var(--ink)}
 
-  /* NOW — editorial micro-section */
-  .now{padding:36px 0 12px}
-  .now-card{
-    border-left:2px solid var(--ox);
-    padding:4px 0 4px 18px;
-    max-width:54ch;
-  }
-  .now-card .now-eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ox);margin-bottom:8px}
-  .now-card p{color:var(--muted);font-size:17px}
-
-  /* RECORD */
-  .row{display:grid;grid-template-columns:80px 1fr auto;gap:18px;align-items:baseline;padding:16px 0;border-top:1px solid var(--line-soft)}
+  .row{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:14px 0;border-top:1px solid var(--line-soft)}
   .row:first-of-type{border-top:1px solid var(--line)}
-  .row .ry{font-family:var(--mono);font-size:11.5px;color:var(--faint);font-feature-settings:"tnum" 1;letter-spacing:.04em}
-  .row .ro strong{font-weight:500}
-  .row .ro span{color:var(--muted)}
-  .row .rd{font-family:var(--mono);font-size:11.5px;color:var(--faint);white-space:nowrap}
-  @media(max-width:560px){
-    .row{grid-template-columns:64px 1fr;row-gap:4px}
-    .row .rd{grid-column:2;text-align:left}
-  }
+  .row strong{font-weight:500}.row .ro span{color:var(--muted)}
+  .row .rd{font-family:var(--mono);font-size:12px;color:var(--faint);white-space:nowrap}
 
-  /* CONTACT */
-  .contact{padding:72px 0 40px;border-top:1px solid var(--line);margin-top:40px}
-  .contact h2{font-family:var(--serif);font-size:clamp(2rem,5.4vw,3rem);line-height:1.08;letter-spacing:-.015em;max-width:16ch;margin-bottom:30px}
+  .contact{padding:60px 0 30px;border-top:1px solid var(--line);margin-top:30px}
+  .contact h2{font-family:var(--serif);font-size:clamp(2rem,5vw,2.8rem);line-height:1.1;letter-spacing:-0.01em;max-width:16ch;margin-bottom:28px}
   .contact h2 .it{font-style:italic;color:var(--ox)}
-  .clinks{display:flex;gap:24px;flex-wrap:wrap;margin-top:14px}
+  .clinks{display:flex;gap:22px;flex-wrap:wrap;margin-top:12px}
+  footer{padding:34px 0 56px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+  footer span{font-family:var(--mono);font-size:11px;color:var(--faint);letter-spacing:0.04em}
 
-  footer{padding:40px 0 60px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
-  footer .wrap{display:flex;justify-content:space-between;align-items:center;width:100%;flex-wrap:wrap;gap:8px}
-  footer span{font-family:var(--mono);font-size:11px;color:var(--faint);letter-spacing:.04em}
-  footer .colophon{color:var(--faint)}
-
-  /* reveal */
-  .reveal{opacity:0;transform:translateY(14px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+  .reveal{opacity:0;transform:translateY(12px);transition:opacity .7s ease,transform .7s ease}
   .reveal.in{opacity:1;transform:none}
-  @media(prefers-reduced-motion:reduce){
-    .reveal,.dot{opacity:1;transform:none;transition:none;animation:none}
-    html{scroll-behavior:auto}
-  }
-
-  /* print */
-  @media print{
-    body::before,nav,.cta-row,.contact .clinks{display:none}
-    body{background:#fff;color:#000;font-size:11pt}
-    a{color:#000;text-decoration:underline}
-    .hero{padding:0 0 24pt}
-    section{padding:12pt 0;break-inside:avoid}
-  }
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
 </style>
 </head>
-
 <body>
-<a href="#main" class="skip">Skip to content</a>
 
-<nav aria-label="Primary">
+<nav>
   <div class="wrap">
-    <a href="#top" class="name" aria-label="Ulvi Aliyev, home">Ulvi Aliyev<span class="pt">.</span></a>
+    <a href="#top" class="name">Ulvi Aliyev<span class="pt">.</span></a>
     <div class="links">
       <a href="#ventures">ventures</a>
       <a href="#about">about</a>
@@ -247,124 +95,99 @@
   </div>
 </nav>
 
-<main id="main">
 <header class="hero" id="top">
   <div class="wrap">
-    <div class="kick reveal">
-      <span class="dot" aria-hidden="true"></span>
-      <span class="mono">Venture builder &nbsp;·&nbsp; Baku &nbsp;·&nbsp; open to new ventures</span>
-    </div>
+    <div class="mono kick reveal">Venture builder &nbsp;·&nbsp; based in Baku</div>
     <h1 class="reveal" style="transition-delay:.05s">Zero to <span class="it">validated.</span></h1>
-    <p class="lede reveal" style="transition-delay:.12s">I take ideas from zero to their first paying customers, then hand the proven venture to a founding team. A lawyer by training, which shapes how I build.</p>
+    <p class="reveal" style="transition-delay:.12s">I take ideas from zero to their first paying customers, then hand the proven venture to a founding team. A lawyer by training, which shapes how I build.</p>
     <div class="cta-row reveal" style="transition-delay:.18s">
-      <a href="https://calendar.app.google/LCq6zjv7c7bHxGR46" target="_blank" rel="noopener" class="btn">Book a call <span class="arr" aria-hidden="true">&rarr;</span></a>
+      <a href="#contact" class="btn">Book a call <span class="arr">&rarr;</span></a>
       <a href="#ventures" class="ghost">See what I've built</a>
     </div>
   </div>
 </header>
 
-<section id="ventures" aria-labelledby="ventures-label">
+<section id="ventures">
   <div class="wrap">
-    <div class="lbl reveal" id="ventures-label">Ventures I've built</div>
+    <div class="lbl reveal">Ventures I've built</div>
 
-    <a class="vl" href="https://dapti.az" target="_blank" rel="noopener" aria-label="Dapti — opens in a new tab">
-      <article class="v reveal">
-        <div class="v-top"><span class="v-name">Dapti <span class="ext" aria-hidden="true">&#8599;</span></span><span class="v-when"><b>SABAH.studio</b><br>2024 – 25</span></div>
-        <p class="v-desc">Adaptive learning platform — diagnoses each student's weak spots and builds a personalized program to pass their entrance exams. Built from zero, then handed to a founding team.</p>
-        <div class="nums">
-          <div><div class="n">$250K</div><div class="c">raised</div></div>
-          <div><div class="n">10</div><div class="c">B2B deals</div></div>
-          <div><div class="n">300+</div><div class="c">monthly users</div></div>
-        </div>
-      </article>
+    <a class="vl" href="https://dapti.az" target="_blank" rel="noopener">
+    <div class="v reveal">
+      <div class="v-top"><span class="v-name">Dapti <span class="ext">&#8599;</span></span><span class="v-when">SABAH.studio<br>2024 – 25</span></div>
+      <p class="v-desc">Adaptive learning platform — diagnoses each student's weak spots and builds a personalized program to pass their entrance exams. Built from zero, then handed to a founding team.</p>
+      <div class="nums">
+        <div><div class="n">$250K</div><div class="c">raised</div></div>
+        <div><div class="n">10</div><div class="c">B2B deals</div></div>
+        <div><div class="n">300+</div><div class="c">monthly users</div></div>
+      </div>
+    </div>
     </a>
 
-    <a class="vl" href="https://admitt.io" target="_blank" rel="noopener" aria-label="Admitt — opens in a new tab">
-      <article class="v reveal">
-        <div class="v-top"><span class="v-name">Admitt <span class="ext" aria-hidden="true">&#8599;</span></span><span class="v-when"><b>SABAH.studio</b><br>2025 – 26</span></div>
-        <p class="v-desc">Study abroad, end to end — consultations, program matching, document workflow, and application tracking in one AI-driven platform. Built from zero; now expanding across the CIS.</p>
-        <div class="nums">
-          <div><div class="n">200+</div><div class="c">users</div></div>
-          <div><div class="n">80+</div><div class="c">partners</div></div>
-          <div><div class="n">3</div><div class="c">markets</div></div>
-        </div>
-      </article>
+    <a class="vl" href="https://admitt.io" target="_blank" rel="noopener">
+    <div class="v reveal">
+      <div class="v-top"><span class="v-name">Admitt <span class="ext">&#8599;</span></span><span class="v-when">SABAH.studio<br>2025 – 26</span></div>
+      <p class="v-desc">Study abroad, end to end — consultations, program matching, document workflow, and application tracking in one AI-driven platform. Built from zero; now expanding across the CIS.</p>
+      <div class="nums">
+        <div><div class="n">200+</div><div class="c">users</div></div>
+        <div><div class="n">80+</div><div class="c">partners</div></div>
+        <div><div class="n">3</div><div class="c">markets</div></div>
+      </div>
+    </div>
     </a>
 
-    <article class="v no-link reveal">
-      <div class="v-top"><span class="v-name">Eathanos</span><span class="v-when"><b>Co-founder</b><br>2023 – 25</span></div>
+    <div class="v reveal">
+      <div class="v-top"><span class="v-name">Eathanos</span><span class="v-when">Co-founder<br>2023 – 25</span></div>
       <p class="v-desc">My own foodtech venture in personalized nutrition. I led product and market strategy, and owned the regulatory side most founders meet too late.</p>
       <div class="nums">
         <div><div class="n">2 yrs</div><div class="c">building 0&rarr;1</div></div>
         <div><div class="n">Co-</div><div class="c">founder</div></div>
       </div>
-    </article>
-  </div>
-</section>
-
-<section id="about" class="about" aria-labelledby="about-label">
-  <div class="wrap">
-    <div class="lbl reveal" id="about-label">About</div>
-    <p class="lead reveal">I take ideas from zero through validation, then hand them to the founding team that scales them.</p>
-    <p class="reveal">I came up through law — corporate and startup work at <span class="hl">Deloitte</span> and <span class="hl">SME Law</span> — and did doctoral research before <em>choosing to build instead of finishing the dissertation.</em> That training still shapes how I build.</p>
-  </div>
-</section>
-
-<section class="now" aria-label="Currently">
-  <div class="wrap">
-    <div class="now-card reveal">
-      <div class="now-eyebrow">Now</div>
-      <p>Lately the work has pulled me toward legaltech. Currently advising two legaltech startups and exploring what to build or back next.</p>
     </div>
   </div>
 </section>
 
-<section id="record" aria-labelledby="record-label">
+<section id="about" class="about">
   <div class="wrap">
-    <div class="lbl reveal" id="record-label">Record</div>
-    <div class="row reveal"><div class="ry">2024 –</div><div class="ro"><strong>Venture Builder</strong> <span>· SABAH.studio</span></div><div class="rd">Dapti &amp; Admitt</div></div>
-    <div class="row reveal"><div class="ry">2023 – 24</div><div class="ro"><strong>Legal Consultant</strong> <span>· Deloitte</span></div><div class="rd">Corporate &amp; startup</div></div>
-    <div class="row reveal"><div class="ry">2022 – 23</div><div class="ro"><strong>Junior Associate</strong> <span>· SME Law</span></div><div class="rd">M&amp;A, fundraising</div></div>
-    <div class="row reveal"><div class="ry">present</div><div class="ro"><strong>Adjunct Lecturer</strong> <span>· SABAH.academy</span></div><div class="rd">Entrepreneurship</div></div>
+    <div class="lbl reveal">About</div>
+    <p class="lead reveal">I take ideas from zero through validation, then hand them to the founding team that scales them.</p>
+    <p class="reveal">I came up through law — corporate and startup work at <span class="hl">Deloitte</span> and <span class="hl">SME Law</span> — and did doctoral research before <em>choosing to build instead of finishing the dissertation.</em> That training still shapes how I build.</p>
+    <p class="reveal">Lately the work has pulled me toward legaltech. I currently advise two legaltech startups and am exploring what to build or back next.</p>
   </div>
 </section>
 
-<section id="contact" class="contact" aria-labelledby="contact-label">
+<section id="record">
   <div class="wrap">
-    <h2 class="reveal" id="contact-label">Building something? <span class="it">Let's talk.</span></h2>
+    <div class="lbl reveal">Record</div>
+    <div class="row reveal"><div class="ro"><strong>Venture Builder</strong> <span>· SABAH.studio</span></div><div class="rd">Dapti &amp; Admitt</div></div>
+    <div class="row reveal"><div class="ro"><strong>Legal Consultant</strong> <span>· Deloitte</span></div><div class="rd">2023 – 24</div></div>
+    <div class="row reveal"><div class="ro"><strong>Junior Associate</strong> <span>· SME Law</span></div><div class="rd">2022 – 23</div></div>
+    <div class="row reveal"><div class="ro"><strong>Adjunct Lecturer</strong> <span>· SABAH.academy</span></div><div class="rd">present</div></div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2 class="reveal">Building something? <span class="it">Let's talk.</span></h2>
     <div class="cta-row reveal" style="transition-delay:.06s">
-      <a href="https://calendar.app.google/LCq6zjv7c7bHxGR46" target="_blank" rel="noopener" class="btn">Book a call <span class="arr" aria-hidden="true">&rarr;</span></a>
+      <a href="mailto:hi@ulvialiyev.com" class="btn">Book a call <span class="arr">&rarr;</span></a>
     </div>
     <div class="clinks reveal" style="transition-delay:.12s">
       <a href="mailto:hi@ulvialiyev.com" class="ghost">hi@ulvialiyev.com</a>
-      <a href="https://www.linkedin.com/in/ualiyev/" target="_blank" rel="noopener" class="ghost">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/ualiyev/" class="ghost">LinkedIn</a>
     </div>
   </div>
 </section>
-</main>
 
 <footer>
-  <div class="wrap">
-    <span>&copy; <span id="yr">2026</span> &nbsp;Ulvi Aliyev</span>
-    <span class="colophon">Set in Instrument Serif &amp; Hanken Grotesk</span>
+  <div class="wrap" style="display:flex;justify-content:space-between;width:100%;flex-wrap:wrap;gap:8px">
+    <span>Ulvi Aliyev</span>
+    <span>zero to validated</span>
   </div>
 </footer>
 
 <script>
-  // year
-  document.getElementById('yr').textContent = new Date().getFullYear();
-
-  // reveal on scroll
-  const io = new IntersectionObserver((es) => {
-    es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-
-  // nav hairline when scrolled
-  const navEl = document.querySelector('nav');
-  const onScroll = () => navEl.classList.toggle('scrolled', window.scrollY > 8);
-  onScroll();
-  window.addEventListener('scroll', onScroll, { passive: true });
+  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 </script>
 
 </body>
