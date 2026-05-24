@@ -8,92 +8,110 @@
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<meta name="theme-color" content="#A83A2E">
+<meta name="theme-color" content="#FFFFFF">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#F5F2EA;--ink:#211D16;--muted:#615C50;--faint:#9A9485;
-    --line:rgba(33,29,22,0.12);--line-soft:rgba(33,29,22,0.07);--ox:#A83A2E;
-    --serif:"Instrument Serif",Georgia,serif;--sans:"Hanken Grotesk",-apple-system,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace;
-    --maxw:680px;
+    --bg:#FFFFFF;            /* clean white */
+    --bg-2:#F6F5F2;
+    --fg:#1A1A18;
+    --muted:#5A584F;
+    --faint:#94918A;
+    --line:rgba(26,26,24,0.13);
+    --line-soft:rgba(26,26,24,0.07);
+    --accent:#1A1A18;        /* near-black CTA */
+    --sans:"Hanken Grotesk",-apple-system,sans-serif;
+    --mono:"IBM Plex Mono",ui-monospace,monospace;
+    --maxw:720px;
   }
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
-  body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:400;line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
-  ::selection{background:var(--ox);color:var(--bg)}
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+  body{background:var(--bg);color:var(--fg);font-family:var(--sans);font-weight:400;line-height:1.62;font-size:17px;-webkit-font-smoothing:antialiased}
+  ::selection{background:var(--fg);color:var(--bg)}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px}
   a{color:inherit;text-decoration:none}
-  .mono{font-family:var(--mono);font-size:12px;letter-spacing:0.04em;color:var(--faint)}
+  .mono{font-family:var(--mono);font-size:13px;letter-spacing:0.02em;color:var(--muted)}
 
-  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:78px}
-  nav .name{font-family:var(--serif);font-size:21px}
-  nav .name .pt{color:var(--ox)}
-  nav .links{display:flex;gap:24px}
-  nav .links a{font-family:var(--mono);font-size:12.5px;color:var(--muted);transition:color .2s}
-  nav .links a:hover{color:var(--ink)}
-  @media(max-width:560px){nav .links{display:none}}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:90px}
+  nav .name{font-size:19px;font-weight:600;letter-spacing:-0.01em}
+  nav .links{display:flex;gap:0;align-items:center}
+  nav .links a{font-family:var(--mono);font-size:13.5px;color:var(--muted);transition:color .2s}
+  nav .links a:hover{color:var(--fg)}
+  nav .links .sep{color:var(--faint);margin:0 16px}
+  @media(max-width:560px){nav .links .sep{margin:0 10px}nav .links a{font-size:12px}}
 
-  .hero{padding:64px 0 76px}
-  .hero .kick{margin-bottom:22px}
-  .hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(2.8rem,8vw,4.6rem);line-height:1;letter-spacing:-0.01em;margin-bottom:26px;max-width:13ch}
-  .hero h1 .it{font-style:italic;color:var(--ox)}
-  .hero p{font-size:18px;color:var(--muted);max-width:46ch;margin-bottom:30px}
-  .cta-row{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
-  .btn{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:var(--bg);font-family:var(--mono);font-size:13px;padding:12px 22px;border-radius:3px;transition:transform .15s,opacity .2s}
-  .btn:hover{transform:translateY(-1px);opacity:.9}
-  .btn .arr{transition:transform .2s}.btn:hover .arr{transform:translateX(3px)}
-  .ghost{font-family:var(--mono);font-size:13px;color:var(--muted);border-bottom:1px solid var(--line);padding-bottom:2px;transition:color .2s,border-color .2s}
-  .ghost:hover{color:var(--ink);border-color:var(--ox)}
+  .hero{padding:46px 0 72px}
+  .hero .kick{margin-bottom:26px}
+  .hero h1{font-size:clamp(2.6rem,7.5vw,4rem);font-weight:600;line-height:1.04;letter-spacing:-0.03em;margin-bottom:34px;max-width:13ch}
+  .hero p{font-size:19px;color:var(--muted);max-width:50ch;margin-bottom:18px;line-height:1.6}
+  .hero .geo{font-family:var(--mono);font-size:13px;color:var(--faint);margin-bottom:40px}
+  .btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#FFFFFF;font-weight:600;font-size:15px;padding:14px 26px;border-radius:9px;transition:transform .15s,opacity .2s}
+  .btn:hover{transform:translateY(-1px);opacity:.92}
 
-  section{padding:30px 0}
-  .lbl{font-family:var(--mono);font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:var(--faint);margin-bottom:24px}
+  .rule{height:1px;background:var(--line-soft);margin:0 auto;max-width:var(--maxw)}
+  .rule .wrap{padding:0}
 
-  .v{padding:28px 0;border-top:1px solid var(--line)}
-  .v-top{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:10px}
-  .v-name{font-family:var(--serif);font-size:28px;display:inline-flex;align-items:center;gap:9px;transition:color .2s}
-  .v-name .ext{font-family:var(--mono);font-size:11px;color:var(--faint);transform:translateY(-6px);transition:color .2s,transform .2s}
-  a.vl:hover .v-name{color:var(--ox)}a.vl:hover .ext{color:var(--ox);transform:translateY(-6px) translateX(2px)}
-  .v-when{font-family:var(--mono);font-size:11px;color:var(--faint);white-space:nowrap;text-align:right;line-height:1.5}
-  .v-desc{color:var(--muted);font-size:16px;margin-bottom:18px;max-width:58ch}
-  .nums{display:flex;gap:38px;flex-wrap:wrap;font-family:var(--mono)}
-  .nums .n{font-size:19px;font-weight:400;font-variant-numeric:tabular-nums}
-  .nums .c{font-size:11px;color:var(--faint);margin-top:3px}
-  @media(max-width:560px){.nums{gap:24px}}
+  section{padding:54px 0}
+  .lbl{font-family:var(--mono);font-size:13px;color:var(--muted);margin-bottom:34px;letter-spacing:0.01em}
+
+  .v{padding:30px 0}
+  .v + .v{border-top:1px solid var(--line-soft)}
+  .v-top{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:14px}
+  .v-name{font-size:25px;font-weight:600;letter-spacing:-0.01em;display:inline-flex;align-items:center;gap:9px;transition:color .2s}
+  .v-name .ext{font-family:var(--mono);font-size:12px;color:var(--faint);transform:translateY(-7px);transition:color .2s,transform .2s}
+  a.vl:hover .v-name{color:#fff}a.vl:hover .ext{color:var(--muted);transform:translateY(-7px) translateX(2px)}
+  .v-when{font-family:var(--mono);font-size:12.5px;color:var(--faint);white-space:nowrap;text-align:right}
+  .v-desc{color:var(--muted);font-size:16.5px;margin-bottom:24px;max-width:60ch;line-height:1.6}
+  .nums{display:flex;gap:46px;flex-wrap:wrap}
+  .nums .n{font-family:var(--mono)}
+  .nums .fig{font-size:25px;font-weight:500;letter-spacing:-0.01em;font-variant-numeric:tabular-nums}
+  .nums .cap{font-size:12px;color:var(--faint);margin-top:6px}
+  @media(max-width:560px){.nums{gap:30px}}
+
+  .scrollcue{display:flex;justify-content:center;padding:6px 0 0}
+  .scrollcue .c{width:44px;height:44px;border:1px solid var(--line);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--muted);animation:bob 2s ease-in-out infinite}
+  @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(5px)}}
+  @media(prefers-reduced-motion:reduce){.scrollcue .c{animation:none}}
 
   .about{padding-top:46px}
-  .about p{font-size:18px;margin-bottom:20px;max-width:56ch;color:var(--muted)}
+  .about .lead{font-size:26px;font-weight:500;line-height:1.4;letter-spacing:-0.015em;color:var(--fg);max-width:22ch;margin-bottom:28px}
+  .about p{font-size:18px;color:var(--muted);max-width:56ch;margin-bottom:20px;line-height:1.6}
   .about p:last-child{margin-bottom:0}
-  .about .lead{font-family:var(--serif);font-size:24px;line-height:1.4;color:var(--ink);max-width:24ch;letter-spacing:-0.005em}
-  .about em{font-style:italic;color:var(--ink)}
-  .about .hl{color:var(--ink)}
+  .about em{font-style:italic;color:var(--fg)}
+  .about .hl{color:var(--fg)}
 
-  .row{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:14px 0;border-top:1px solid var(--line-soft)}
+  .row{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:15px 0;border-top:1px solid var(--line-soft)}
   .row:first-of-type{border-top:1px solid var(--line)}
-  .row strong{font-weight:500}.row .ro span{color:var(--muted)}
-  .row .rd{font-family:var(--mono);font-size:12px;color:var(--faint);white-space:nowrap}
+  .row strong{font-weight:600}.row .ro span{color:var(--muted)}
+  .row .ro .ext{font-family:var(--mono);font-size:11px;color:var(--faint);margin-left:7px;transition:color .2s,transform .2s;display:inline-block}
+  .row .rd{font-family:var(--mono);font-size:12.5px;color:var(--faint);white-space:nowrap}
+  a.rowlink:hover .row{ }
+  a.rowlink:hover .ro strong{color:#000}
+  a.rowlink:hover .ro .ext{color:var(--muted);transform:translateX(2px)}
 
-  .contact{padding:60px 0 30px;border-top:1px solid var(--line);margin-top:30px}
-  .contact h2{font-family:var(--serif);font-size:clamp(2rem,5vw,2.8rem);line-height:1.1;letter-spacing:-0.01em;max-width:16ch;margin-bottom:28px}
-  .contact h2 .it{font-style:italic;color:var(--ox)}
-  .clinks{display:flex;gap:22px;flex-wrap:wrap;margin-top:12px}
-  footer{padding:34px 0 56px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
-  footer span{font-family:var(--mono);font-size:11px;color:var(--faint);letter-spacing:0.04em}
+  .contact{padding:64px 0 40px;border-top:1px solid var(--line);margin-top:20px}
+  .contact h2{font-size:clamp(2rem,5vw,2.9rem);font-weight:600;line-height:1.06;letter-spacing:-0.025em;max-width:15ch;margin-bottom:32px}
+  .clinks{display:flex;gap:24px;flex-wrap:wrap;margin-top:18px}
+  .clinks a{font-family:var(--mono);font-size:13.5px;color:var(--muted);border-bottom:1px solid var(--line);padding-bottom:3px;transition:color .2s,border-color .2s}
+  .clinks a:hover{color:var(--fg);border-color:var(--muted)}
+  footer{padding:30px 0 56px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+  footer span{font-family:var(--mono);font-size:12px;color:var(--faint)}
 
-  .reveal{opacity:0;transform:translateY(12px);transition:opacity .7s ease,transform .7s ease}
-  .reveal.in{opacity:1;transform:none}
-  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+  .rv{opacity:0;transform:translateY(13px);transition:opacity .7s ease,transform .7s ease}
+  .rv.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}}
 </style>
 </head>
 <body>
 
 <nav>
   <div class="wrap">
-    <a href="#top" class="name">Ulvi Aliyev<span class="pt">.</span></a>
+    <a href="#top" class="name">Ulvi Aliyev</a>
     <div class="links">
-      <a href="#ventures">ventures</a>
-      <a href="#about">about</a>
+      <a href="#ventures">ventures</a><span class="sep">·</span>
+      <a href="#about">about</a><span class="sep">·</span>
       <a href="#contact">contact</a>
     </div>
   </div>
@@ -101,84 +119,77 @@
 
 <header class="hero" id="top">
   <div class="wrap">
-    <div class="mono kick reveal">Venture builder &nbsp;·&nbsp; based in Baku</div>
-    <h1 class="reveal" style="transition-delay:.05s">Zero to <span class="it">validated.</span></h1>
-    <p class="reveal" style="transition-delay:.12s">I take ideas from zero to their first paying customers, then hand the proven venture to a founding team. A lawyer by training, which shapes how I build.</p>
-    <div class="cta-row reveal" style="transition-delay:.18s">
-      <a href="#contact" class="btn">Book a call <span class="arr">&rarr;</span></a>
-      <a href="#ventures" class="ghost">See what I've built</a>
-    </div>
+    <div class="mono kick rv">venture builder</div>
+    <h1 class="rv" style="transition-delay:.05s">From idea to first customers.</h1>
+    <p class="rv" style="transition-delay:.12s">Once an idea proves out, I hand it to a founding team to scale.</p>
+    <a href="#contact" class="btn rv" style="transition-delay:.2s">Book a call</a>
   </div>
 </header>
 
+<div class="rule"><div class="wrap"></div></div>
+
 <section id="ventures">
   <div class="wrap">
-    <div class="lbl reveal">Ventures I've built</div>
 
     <a class="vl" href="https://dapti.az" target="_blank" rel="noopener">
-    <div class="v reveal">
-      <div class="v-top"><span class="v-name">Dapti <span class="ext">&#8599;</span></span><span class="v-when">SABAH.studio<br>2024 – 25</span></div>
-      <p class="v-desc">Adaptive learning platform — diagnoses each student's weak spots and builds a personalized program to pass their entrance exams. Built from zero, then handed to a founding team.</p>
+    <div class="v rv">
+      <div class="v-top"><span class="v-name">Dapti <span class="ext">&#8599;</span></span><span class="v-when">SABAH.studio &nbsp;·&nbsp; 2024–25</span></div>
+      <p class="v-desc">Adaptive learning platform — diagnoses each student's weak spots and builds a personalized program to pass entrance exams. Built from zero, then handed to a founding team.</p>
       <div class="nums">
-        <div><div class="n">$250K</div><div class="c">raised</div></div>
-        <div><div class="n">10</div><div class="c">B2B deals</div></div>
-        <div><div class="n">300+</div><div class="c">monthly users</div></div>
+        <div class="n"><div class="fig">$250K</div><div class="cap">raised</div></div>
+        <div class="n"><div class="fig">10</div><div class="cap">B2B deals</div></div>
+        <div class="n"><div class="fig">300+</div><div class="cap">monthly users</div></div>
       </div>
     </div>
     </a>
 
     <a class="vl" href="https://admitt.io" target="_blank" rel="noopener">
-    <div class="v reveal">
-      <div class="v-top"><span class="v-name">Admitt <span class="ext">&#8599;</span></span><span class="v-when">SABAH.studio<br>2025 – 26</span></div>
+    <div class="v rv">
+      <div class="v-top"><span class="v-name">Admitt <span class="ext">&#8599;</span></span><span class="v-when">SABAH.studio &nbsp;·&nbsp; 2025–26</span></div>
       <p class="v-desc">Study abroad, end to end — consultations, program matching, document workflow, and application tracking in one AI-driven platform. Built from zero; now expanding across the CIS.</p>
       <div class="nums">
-        <div><div class="n">200+</div><div class="c">users</div></div>
-        <div><div class="n">80+</div><div class="c">partners</div></div>
-        <div><div class="n">3</div><div class="c">markets</div></div>
+        <div class="n"><div class="fig">200+</div><div class="cap">users</div></div>
+        <div class="n"><div class="fig">80+</div><div class="cap">partners</div></div>
+        <div class="n"><div class="fig">3</div><div class="cap">markets expanding</div></div>
       </div>
     </div>
     </a>
 
-    <div class="v reveal">
-      <div class="v-top"><span class="v-name">Eathanos</span><span class="v-when">Co-founder<br>2023 – 25</span></div>
+    <div class="v rv">
+      <div class="v-top"><span class="v-name">Eathanos</span><span class="v-when">Co-founder &nbsp;·&nbsp; 2023–25</span></div>
       <p class="v-desc">My own foodtech venture in personalized nutrition. I led product and market strategy, and owned the regulatory side most founders meet too late.</p>
-      <div class="nums">
-        <div><div class="n">2 yrs</div><div class="c">building 0&rarr;1</div></div>
-        <div><div class="n">Co-</div><div class="c">founder</div></div>
-      </div>
     </div>
+
+    <div class="scrollcue rv"><div class="c">&darr;</div></div>
   </div>
 </section>
 
 <section id="about" class="about">
   <div class="wrap">
-    <div class="lbl reveal">About</div>
-    <p class="lead reveal">I take ideas from zero through validation, then hand them to the founding team that scales them.</p>
-    <p class="reveal">I came up through law — corporate and startup work at <span class="hl">Deloitte</span> and <span class="hl">SME Law</span> — and did doctoral research before <em>choosing to build instead of finishing the dissertation.</em> That training still shapes how I build.</p>
-    <p class="reveal">Lately the work has pulled me toward legaltech. I currently advise two legaltech startups and am exploring what to build or back next.</p>
+    <p class="lead rv">I take ideas from zero through validation, then hand them to the founding team that scales them.</p>
+    <p class="rv">I came up through law — corporate and startup work at <span class="hl">Deloitte</span> and <span class="hl">SME Law</span> — and did doctoral research before <em>choosing to build instead of finishing the dissertation.</em> That training still shapes how I build.</p>
+    <p class="rv">Lately the work has pulled me toward legaltech. I currently advise two legaltech startups and am exploring what to build or back next.</p>
   </div>
 </section>
 
 <section id="record">
   <div class="wrap">
-    <div class="lbl reveal">Record</div>
-    <div class="row reveal"><div class="ro"><strong>Venture Builder</strong> <span>· SABAH.studio</span></div><div class="rd">Dapti &amp; Admitt</div></div>
-    <div class="row reveal"><div class="ro"><strong>Legal Consultant</strong> <span>· Deloitte</span></div><div class="rd">2023 – 24</div></div>
-    <div class="row reveal"><div class="ro"><strong>Junior Associate</strong> <span>· SME Law</span></div><div class="rd">2022 – 23</div></div>
-    <div class="row reveal"><div class="ro"><strong>Legal Trainee</strong> <span>· Bryan Cave Leighton Paisner</span></div><div class="rd">2021 – 22</div></div>
-    <div class="row reveal"><div class="ro"><strong>Adjunct Lecturer</strong> <span>· SABAH.academy</span></div><div class="rd">present</div></div>
+    <a class="rowlink" href="https://sabahhub.com" target="_blank" rel="noopener"><div class="row rv"><div class="ro"><strong>Venture Builder</strong> <span>· SABAH.studio</span><span class="ext">&#8599;</span></div><div class="rd">2024–present</div></div></a>
+    <a class="rowlink" href="https://sabahhub.com" target="_blank" rel="noopener"><div class="row rv"><div class="ro"><strong>Adjunct Lecturer</strong> <span>· SABAH.academy</span><span class="ext">&#8599;</span></div><div class="rd">present</div></div></a>
+    <a class="rowlink" href="https://www.deloitte.com" target="_blank" rel="noopener"><div class="row rv"><div class="ro"><strong>Legal Consultant</strong> <span>· Deloitte</span><span class="ext">&#8599;</span></div><div class="rd">2023–24</div></div></a>
+    <a class="rowlink" href="https://smelaw.az" target="_blank" rel="noopener"><div class="row rv"><div class="ro"><strong>Junior Associate</strong> <span>· SME Law</span><span class="ext">&#8599;</span></div><div class="rd">2022–23</div></div></a>
+    <a class="rowlink" href="https://www.bclplaw.com" target="_blank" rel="noopener"><div class="row rv"><div class="ro"><strong>Legal Trainee</strong> <span>· Bryan Cave Leighton Paisner</span><span class="ext">&#8599;</span></div><div class="rd">2021–22</div></div></a>
+    <a class="rowlink" href="https://xsolla.com" target="_blank" rel="noopener"><div class="row rv"><div class="ro"><strong>Trainee</strong> <span>· Xsolla</span><span class="ext">&#8599;</span></div><div class="rd">2020</div></div></a>
   </div>
 </section>
 
 <section id="contact" class="contact">
   <div class="wrap">
-    <h2 class="reveal">Building something? <span class="it">Let's talk.</span></h2>
-    <div class="cta-row reveal" style="transition-delay:.06s">
-      <a href="mailto:hi@ulvialiyev.com" class="btn">Book a call <span class="arr">&rarr;</span></a>
-    </div>
-    <div class="clinks reveal" style="transition-delay:.12s">
-      <a href="mailto:hi@ulvialiyev.com" class="ghost">hi@ulvialiyev.com</a>
-      <a href="https://www.linkedin.com/in/ualiyev/" class="ghost">LinkedIn</a>
+    <h2 class="rv">Building something? Let's talk.</h2>
+    <a href="mailto:hi@ulvialiyev.com" class="btn rv" style="transition-delay:.06s">Book a call</a>
+    <div class="clinks rv" style="transition-delay:.12s">
+      <a href="mailto:hi@ulvialiyev.com">hi@ulvialiyev.com</a>
+      <a href="https://www.linkedin.com/in/ualiyev/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
   </div>
 </section>
@@ -186,13 +197,13 @@
 <footer>
   <div class="wrap" style="display:flex;justify-content:space-between;width:100%;flex-wrap:wrap;gap:8px">
     <span>Ulvi Aliyev</span>
-    <span>zero to validated</span>
+    <span>&copy; 2026</span>
   </div>
 </footer>
 
 <script>
   const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
-  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 </script>
 
 </body>
